@@ -1,0 +1,15 @@
+.main-box{
+    display: flex;
+    padding: 0 20px;
+    gap: 20px;
+}
+.title{
+    color: rgb(64, 166, 100);
+}
+.description{
+    font-size: 20px;
+    font-style: italic;
+}
+.images img{
+    width: 500px;
+}

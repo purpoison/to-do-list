@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="flex-wrap">
+        <div>
+            <ul class="resume-list">
+                <li><b>ПІБ:</b> {{name}}</li>
+                <li><b>Телефон:</b> {{phone}}</li>
+                <li><b>Email:</b> {{email}}</li>
+                <li><b>Місто проживання:</b> {{city}}</li>
+                <li><app-experience></app-experience></li>
+                <li><app-skills></app-skills></li>
+            </ul>
+            <ul class="link-list">
+                <li><a href={{git}} target="_blank"><img src="../../assets/resume/github-logo.png" alt="github"></a></li>
+                <li><a href={{link}} target="_blank"> <img src="../../assets/resume/linkedin-icon.png" alt="linkedin"></a></li>
+                <li><a href={{fb}} target="_blank"><img src="../../assets/resume/fb-icon.webp" alt="facebook"></a></li>
+            </ul>
+        </div>
+        <div class="img-wrap">        
+            <img src={{photo}} alt="photo">
+        </div>
+    </div>
+</div>

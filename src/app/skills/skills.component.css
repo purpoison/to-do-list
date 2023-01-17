@@ -1,0 +1,7 @@
+.certificate-wrap{
+    display: flex;
+    gap: 20px;
+}
+.certificate-wrap img{
+    max-width: 20%;
+}

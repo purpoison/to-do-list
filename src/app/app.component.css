@@ -1,0 +1,36 @@
+.header{
+    background-color: rgb(157, 66, 122);
+}
+.container{
+    max-width: 1200px;
+    padding: 0 20px;
+}
+.menu-list{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+.menu-list li{
+    padding: 10px;
+}
+.menu-link{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+.menu-link:hover{
+    background-color: rgb(119, 49, 92);
+}
+.footer{
+    background-color: rgb(157, 66, 122);
+    padding: 20px;
+}
+.footer p{
+    color: rgb(255, 255, 255);
+}
+li .active{
+    background-color: rgb(119, 49, 92);
+    color: #000;
+}

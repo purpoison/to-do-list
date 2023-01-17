@@ -1,0 +1,18 @@
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.wrap{
+    display: flex;
+    gap: 20px;
+}
+.link-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+/* ul{
+    background-color: rgb(135, 49, 49);
+} */
