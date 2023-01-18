@@ -1,16 +1,13 @@
 <header class="header">
     <div class="container">
         <ul class="menu-list">
-            <li><a href="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-            <li><a href="Bill_Gates" routerLinkActive="active">Bill Gates</a></li>
-            <li><a href="Resume"  routerLinkActive="active">Resume</a></li>
-            <li><a href="Hobby"  routerLinkActive="active">Hobby</a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/" class="menu-link">Home</a></li>
+            <li routerLinkActive="active"><a routerLink="Bill_Gates" class="menu-link" >Bill Gates</a></li>
+            <li routerLinkActive="active"><a routerLink="Resume" class="menu-link">Resume</a></li>
+            <li routerLinkActive="active"><a routerLink="Hobby" class="menu-link">Hobby</a></li>
         </ul>
     </div>
 </header>
-<!-- <app-bill-gates></app-bill-gates> -->
-<!-- <app-hobby></app-hobby> -->
-<!-- <app-resume></app-resume> -->
 <router-outlet></router-outlet>
 <footer class="footer">
     <div class="container">

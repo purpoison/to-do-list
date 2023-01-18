@@ -15,12 +15,12 @@
 .menu-list li{
     padding: 10px;
 }
-.menu-link{
+a{
     text-decoration: none;
     color: #fff;
     padding: 10px;
 }
-.menu-link:hover{
+a:hover{
     background-color: rgb(119, 49, 92);
 }
 .footer{
@@ -30,7 +30,6 @@
 .footer p{
     color: rgb(255, 255, 255);
 }
-li .active{
+.active a{
     background-color: rgb(119, 49, 92);
-    color: #000;
 }
