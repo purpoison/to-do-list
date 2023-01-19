@@ -3,7 +3,7 @@
         <div>
             <ul class="resume-list">
                 <li><b>ПІБ:</b> {{name}}</li>
-                <li><b>Телефон:</b> {{phone}}</li>
+                <li><b>Телефон:</b> {{phone | currency:'UAH':'symbol-narrow':'1.1-1'}}</li>
                 <li><b>Email:</b> {{email}}</li>
                 <li><b>Місто проживання:</b> {{city}}</li>
                 <li><app-experience></app-experience></li>
