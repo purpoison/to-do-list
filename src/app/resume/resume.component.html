@@ -3,9 +3,11 @@
         <div>
             <ul class="resume-list">
                 <li><b>ПІБ:</b> {{name}}</li>
-                <li><b>Телефон:</b> {{phone | currency:'UAH':'symbol-narrow':'1.1-1'}}</li>
+                <li><b>Телефон:</b> {{phone}}</li>
                 <li><b>Email:</b> {{email}}</li>
                 <li><b>Місто проживання:</b> {{city}}</li>
+                <li><b>Бажана зарплата: </b>{{salary | currency}}</li>
+                <li><b>Пройдений курс на:</b> {{course | percent}}</li>
                 <li><app-experience></app-experience></li>
                 <li><app-skills></app-skills></li>
             </ul>

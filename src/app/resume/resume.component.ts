@@ -14,4 +14,6 @@ export class ResumeComponent {
   git:string = 'https://github.com/purpoison'
   link:string = 'https://www.linkedin.com/in/tetiana-kozynets-551b03184/'
   fb:string = 'https://www.facebook.com/tatiana.leto.5/'
+  salary:number = 5000
+  course:number = 0.65
 }
