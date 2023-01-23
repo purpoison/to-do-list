@@ -1,2 +1,31 @@
-<p>base-component works!</p>
-<h1>Home page</h1>
+<!-- <h1>Home page</h1>
+<input type="text">
+<input type="text" #input1 (keyup.enter)="result = input1.value">
+
+<span>{{result}}</span> -->
+
+<div class="container">
+    <div class="calculation">
+        <input type="text" #input1 (keyup.enter)="plus(input1.value, input2.value)">
+        <input type="text" #input2 (keyup.enter)="plus(input1.value, input2.value)">
+        <br>
+        <button (click)="plus(input1.value, input2.value)">+</button>
+        <button (click)="minus(input1.value, input2.value)">-</button>
+        <button (click)="divi(input1.value, input2.value)">/</button>
+        <button (click)="multi(input1.value, input2.value)">*</button>
+        <br>
+        <span>{{result}}</span>
+    </div>
+    <div>
+        <h2>My list</h2>
+        <ul class="items">
+            <li *ngFor="let item of items">
+                {{item.id + item.name}}
+            </li>
+        </ul>
+    </div>
+    <div *ngIf="items.length > 10">
+        {{items.length}}
+        {{items.length == 1 ? 'item' : 'items'}}
+    </div>
+</div>

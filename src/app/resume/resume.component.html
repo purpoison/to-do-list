@@ -8,6 +8,15 @@
                 <li><b>Місто проживання:</b> {{city}}</li>
                 <li><b>Бажана зарплата: </b>{{salary | currency}}</li>
                 <li><b>Пройдений курс на:</b> {{course | percent}}</li>
+                <li><b>Вік:</b> {{age}}             
+                    <div class="btn-wrap">
+                        <button (click)="inc()">+</button>
+                        <button (click)="dec()">-</button>
+                    </div>
+                </li>
+                <li><button (click)="tm = age; age = course; course = tm;">reverse</button></li>
+                <li><button (click)="consoleInfo($event)">event</button></li>
+                <li><button (click)="consoleEventType($event)">Type</button></li>
                 <li><app-experience></app-experience></li>
                 <li><app-skills></app-skills></li>
             </ul>
@@ -16,9 +25,17 @@
                 <li><a href={{link}} target="_blank"> <img src="../../assets/resume/linkedin-icon.png" alt="linkedin"></a></li>
                 <li><a href={{fb}} target="_blank"><img src="../../assets/resume/fb-icon.webp" alt="facebook"></a></li>
             </ul>
+            <div class="wrapper">
+                <label for="man">чоловік</label>
+                <!-- <input type="radio" id="man" [checked]="flag" name="btns"> -->
+                <input type="radio" id="man" checked='{{!flag}}' name="btns">
+                <label for="woman">жінка</label>
+                <input type="radio" id="woman" name="btns">
+            </div>
         </div>
         <div class="img-wrap">        
             <img src={{photo}} alt="photo">
         </div>
+
     </div>
 </div>

@@ -16,4 +16,25 @@ export class ResumeComponent {
   fb:string = 'https://www.facebook.com/tatiana.leto.5/'
   salary:number = 5000
   course:number = 0.65
+  flag:boolean = true
+  age:number = 28
+  tm:any
+  info:string = 'hello'
+
+  inc(){
+    this.age++;
+  }
+  dec(){
+    this.age--;
+  }
+
+  consoleInfo(info:any){
+    console.log(info);
+  }
+  consoleEvent(e:any){
+    console.log(e);
+  }
+  consoleEventType(e:any){
+    console.log(e.type);
+  }
 }
