@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { BiggestAirplaneComponent } from './biggest-airplane/biggest-airplane.component';
-import { BiggestCarComponent } from './biggest-car/biggest-car.component';
-import { BiggestShipComponent } from './biggest-ship/biggest-ship.component';
+// import {AppModule} from '../app.module';
+import { BiggestAirplaneComponent } from '../biggest-airplane/biggest-airplane.component';
+import { BiggestCarComponent } from '../biggest-car/biggest-car.component';
+import { BiggestShipComponent } from '../biggest-ship/biggest-ship.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    // AppModule,
     RouterModule.forRoot(routes)
   ],
   // exports: [RouterModule]
