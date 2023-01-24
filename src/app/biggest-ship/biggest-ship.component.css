@@ -3,4 +3,16 @@
     padding: 20px;
     display: flex;
     margin: 10px;
+    gap: 20px;
+    justify-content: space-between;
+}
+.vehicle-wrap img{
+    max-width: 50%;
+}
+.vehicle-wrap table td{
+    padding: 10px;
+    border: 1px solid rgb(34, 144, 124);
+}
+.vehicle-wrap table{
+ width: 100%;
 }

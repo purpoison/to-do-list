@@ -1,26 +1,34 @@
 <div class="vehicle-wrap">
-    <div>
-        <h1>Літак Ан-225 «Мрія»</h1>
+    <div class="vehicle-description">
+        <h1>{{title | uppercase}}</h1>
     <p>найбільший та найпотужніший у світі транспортний літак , створений київським КБ імені Антонова. Головний конструктор — Віктор Ілліч Толмачов.</p>
-    <p>Вартість одиниці	250-300 млн.$</p>
+    <p>	250-300 млн.$</p>
     <table>
         <tr>
+            <td>Вартість одиниці</td>
+            <td> {{price | currency}}</td>
+        </tr>
+        <tr>
+            <td>Перший політ</td>
+            <td> {{date}}</td>
+        </tr>
+        <tr>
             <td>Довжина</td>
-            <td>84 м</td>
+            <td>{{length}} м</td>
         </tr>
         <tr>
             <td>Розмах крила</td>
-            <td>88,40 м</td>
+            <td>{{wing}} м</td>
         </tr>
         <tr>
             <td>Площа крила</td>
-            <td>905,0 м²</td>
+            <td>{{area}} м²</td>
         </tr>
         <tr>
             <td>Висота</td>
-            <td>18,1 м</td>
+            <td>{{height}} м</td>
         </tr>
     </table>
     </div>
-    <img src="../../assets/vehicle/airplane.jpg" alt="airplane">
+    <img src={{img}} alt="airplane">
 </div>

@@ -1,16 +1,16 @@
 <div class="vehicle-wrap">
-    <div>
-        <h1>Knock Nevis</h1>
+    <div class="vehicle-description">
+        <h1>{{title | uppercase}}</h1>
         <p>(в минулому також називався Seawise Giant, Happy Giant і Jahre Viking) — супертанкер під норвезьким прапором. Його розміри: 458 метрів в довжину і 69 метрів в ширину та водотоннажність 825 614 тонн роблять його найбільшим кораблем світу. Побудований протягом 1979—1981 років, в останні роки експлуатації використовувався як плавуче нафтосховище, утилізований 2010 році.
         </p>
         <table>
             <tr>
                 <td>Довжина</td>
-                <td>458.45 м</td>
+                <td>{{length}} м</td>
             </tr>
             <tr>
                 <td>Ширина</td>
-                <td>68,6 м</td>
+                <td>{{width}} м</td>
             </tr>
             <tr>
                 <td>Швидкість</td>
@@ -18,5 +18,5 @@
             </tr>
         </table>
     </div>
-    <img src="../../assets/vehicle/ship.jpg" alt="ship">
+    <img src={{img}} alt="ship">
 </div>

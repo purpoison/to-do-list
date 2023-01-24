@@ -14,3 +14,6 @@
     max-width: 1200px;
     padding: 0 20px;
 }
+.active{
+    background-color: rgb(32, 131, 113);
+}
