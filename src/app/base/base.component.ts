@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ToDoItem} from './toDoItem';
+import {ToDoItem} from './ToDoItem';
 import {ITEMS} from './mock-todo-items';
 
 @Component({

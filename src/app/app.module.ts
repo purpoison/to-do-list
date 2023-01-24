@@ -10,9 +10,9 @@ import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import { BaseComponent } from './base/base.component';
 import { ButtonMenuComponent } from './button-menu/button-menu.component';
-import { BiggestCarComponent } from './biggest-car/biggest-car.component';
-import { BiggestShipComponent } from './biggest-ship/biggest-ship.component';
-import { BiggestAirplaneComponent } from './biggest-airplane/biggest-airplane.component';
+// import { BiggestCarComponent } from './button-menu/biggest-car/biggest-car.component';
+// import { BiggestShipComponent } from './button-menu/biggest-ship/biggest-ship.component';
+// import { BiggestAirplaneComponent } from './button-menu/biggest-airplane/biggest-airplane.component';
 
 const routes: Routes = [
   {path: '', component: BaseComponent},
@@ -31,9 +31,9 @@ const routes: Routes = [
     SkillsComponent,
     BaseComponent,
     ButtonMenuComponent,
-    BiggestCarComponent,
-    BiggestShipComponent,
-    BiggestAirplaneComponent,
+    // BiggestCarComponent,
+    // BiggestShipComponent,
+    // BiggestAirplaneComponent,
   ],
   imports: [
     BrowserModule,

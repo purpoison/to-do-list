@@ -1,9 +1,10 @@
 <div class="container">
     <div class="vehical-wrap">
-        <ul>
-            <li><button>Найбільший автомобіль</button></li>
-            <li><button>Найбільший літак</button></li>
-            <li><button>Найбільший корабель</button></li>
+        <ul class="link-wrap">
+            <li><a routerLink="Car" class="link">Найбільший автомобіль</a ></li>
+            <li><a routerLink="Airplane" class="link">Найбільший літак</a ></li>
+            <li><a routerLink="Ship" class="link">Найбільший корабель</a ></li>
         </ul>
+        <router-outlet></router-outlet>
     </div>
 </div>
