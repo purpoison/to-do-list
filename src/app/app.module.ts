@@ -15,13 +15,16 @@ import { BiggestShipComponent } from './biggest-ship/biggest-ship.component';
 import { BiggestAirplaneComponent } from './biggest-airplane/biggest-airplane.component';
 
 const routes: Routes = [
-  {path: '', component: BaseComponent},
+  {path: '', component: BaseComponent,
+  children:[
+    {path: 'Airplane', component: BiggestAirplaneComponent},
+    {path: 'Car', component: BiggestCarComponent},
+    {path: 'Ship', component: BiggestShipComponent}
+  ]
+},
   {path: 'Bill_Gates', component: BillGatesComponent},
   {path: 'Hobby', component: HobbyComponent},
-  {path: 'Resume', component: ResumeComponent},
-  {path: 'Airplane', component: BiggestAirplaneComponent},
-  {path: 'Car', component: BiggestCarComponent},
-  {path: 'Ship', component: BiggestShipComponent}
+  {path: 'Resume', component: ResumeComponent}
 ]
 
 @NgModule({
