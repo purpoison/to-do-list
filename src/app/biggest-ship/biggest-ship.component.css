@@ -1,7 +1,5 @@
-.container{
+.vehicle-wrap{
     border: 1px solid #000;
     padding: 20px;
-}
-.flex{
     display: flex;
 }
