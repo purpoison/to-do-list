@@ -13,6 +13,7 @@ import { ButtonMenuComponent } from './button-menu/button-menu.component';
 import { BiggestCarComponent } from './biggest-car/biggest-car.component';
 import { BiggestShipComponent } from './biggest-ship/biggest-ship.component';
 import { BiggestAirplaneComponent } from './biggest-airplane/biggest-airplane.component';
+import { SwitchComponent } from './switch/switch.component';
 
 const routes: Routes = [
   {path: '', component: BaseComponent,
@@ -40,6 +41,7 @@ const routes: Routes = [
     BiggestCarComponent,
     BiggestShipComponent,
     BiggestAirplaneComponent,
+    SwitchComponent,
   ],
   imports: [
     BrowserModule,

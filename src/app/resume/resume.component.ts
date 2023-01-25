@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import * as moment from 'moment';
+import {Moment} from 'moment';
 
 @Component({
   selector: 'app-resume',
@@ -18,8 +20,18 @@ export class ResumeComponent {
   course:number = 0.65
   flag:boolean = true
   age:number = 28
+  newDate:any = moment('1994-03-26')
+  dateNow:any = moment().format()
   tm:any
   info:string = 'hello'
+  rs:any
+  constructor(){
+    this.rs = (this.newDate.diff(moment().format(), 'year')) * -1;
+  }
+
+
+
+
 
   inc(){
     this.age++;
