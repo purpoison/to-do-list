@@ -1,9 +1,12 @@
 <p><b>Навички:</b></p>
 <ul>
-    <li>{{skill1}}</li>
+    <li *ngFor="let skill  of skills">
+        {{skill}}
+    </li>
+    <!-- <li>{{skill1}}</li>
     <li>{{skill2}}</li>
     <li>{{skill3}}</li>
-    <li>{{skill4}}</li>
+    <li>{{skill4}}</li> -->
 </ul>
 <p><b>Сертифікати:</b></p>
 <div class="certificate-wrap">

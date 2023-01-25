@@ -19,10 +19,6 @@ export class BaseComponent {
 
 
 
-
-
-
-
   showResult(text:any){
     this.result = text;
   }
